@@ -63,10 +63,10 @@ demographics, academic performance, and socioeconomic indicators.
 
 ```
 student-performance-preprocessing/
-├── NUTDTS_815_Project_Precious_Faseyosan.ipynb   # Full preprocessing notebook
-├── student_preprocessing_dataset_project.xlsx    # Raw dataset (525 records)
-├── cleaned_student_dataset.xlsx                  # Output 1: cleaned, pre-transformation (500 records, 9 cols)
-├── ML_ready__student_dataset.xlsx                # Output 2: scaled, encoded, ML-ready (500 records, 17 cols)
+├── student_performance_preprocessing.ipynb   # Full preprocessing notebook
+├── student_performance_raw.xlsx    # Raw dataset (525 records)
+├── student_performance_cleaned.xlsx                  # Output 1: cleaned, pre-transformation (500 records, 9 cols)
+├── student_performance_ml_ready.xlsx                # Output 2: scaled, encoded, ML-ready (500 records, 17 cols)
 └── README.md
 ```
 
@@ -76,8 +76,8 @@ student-performance-preprocessing/
 
 | File | Records | Columns | Description |
 |------|---------|---------|-------------|
-| `cleaned_student_dataset.xlsx` | 500 | 9 | Cleaned and standardised. Text categories corrected, duplicates removed, missing values imputed. No scaling or encoding applied — human-readable. |
-| `ML_ready__student_dataset.xlsx` | 500 | 17 | Fully transformed. Numeric features Min-Max scaled. Gender and Final_Result label-encoded. Course one-hot encoded. Student_ID dropped. |
+| `student_performance_cleaned.xlsx` | 500 | 9 | Cleaned and standardised. Text categories corrected, duplicates removed, missing values imputed. No scaling or encoding applied — human-readable. |
+| `student_performance_ml_ready.xlsx` | 500 | 17 | Fully transformed. Numeric features Min-Max scaled. Gender and Final_Result label-encoded. Course one-hot encoded. Student_ID dropped. |
 
 **Student_ID** is saved separately with its original index so model predictions
 can be traced back to individual students after training.
@@ -122,7 +122,7 @@ have no numerical relationship a model could misinterpret.
 ## 👤 Author
 
 **Precious Faseyosan**
-Graduate Petroleum Engineer | MSc Data Science Candidate
+Graduate Petroleum Engineer | MSc Data Science Student
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/precious-faseyosan)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github)](https://github.com/PreciousFaseyosan)
