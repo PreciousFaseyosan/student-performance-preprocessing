@@ -117,6 +117,12 @@ Both are binary columns (2 categories only). Label Encoding is safe
 here because no false ordering is implied — Male/Female and Pass/Fail
 have no numerical relationship a model could misinterpret.
 
+**Why export cleaned dataset before transformation?**
+The cleaned dataset is saved BEFORE any scaling or encoding, while all
+columns are still in their original, human-readable format. This 
+creates a clean reference copy and a clear checkpoint for debugging.
+
+
 ---
 
 ## 👤 Author
